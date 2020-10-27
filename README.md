@@ -1,1 +1,1 @@
-vue-dotnet-template-2
+vue-dotnet-typescript

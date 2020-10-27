@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace vue_dotnet_template_2
+namespace vue_dotnet_typescript
 {
     public class Startup
     {

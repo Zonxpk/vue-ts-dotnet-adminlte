@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vue-dotnet-template-2", "vue-dotnet-template-2.csproj", "{5D774D13-992E-4CB2-A6FB-38976A3ECE6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vue-dotnet-typescript", "vue-dotnet-typescript.csproj", "{5D774D13-992E-4CB2-A6FB-38976A3ECE6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

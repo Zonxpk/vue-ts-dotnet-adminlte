@@ -17,7 +17,7 @@ module.exports = (env) => {
                 { test: /\.vue\.html$/, include: /ClientApp/, loader: 'vue-loader', options: { loaders: { js: 'awesome-typescript-loader?silent=true' } } },
                 { test: /\.ts$/, include: /ClientApp/, use: 'awesome-typescript-loader?silent=true' },
                 { test: /\.css$/, use: isDevBuild ? [ 'style-loader', 'css-loader' ] : ExtractTextPlugin.extract({ use: 'css-loader?minimize' }) },
-                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' }
+                { test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=25000' },
             ]
         },
         output: {
@@ -32,6 +32,10 @@ module.exports = (env) => {
                     NODE_ENV: JSON.stringify(isDevBuild ? 'development' : 'production')
                 }
             }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            }),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
@@ -45,7 +49,7 @@ module.exports = (env) => {
         ] : [
             // Plugins that apply in production builds only
             new webpack.optimize.UglifyJsPlugin(),
-            new ExtractTextPlugin('site.css')
+            // new ExtractTextPlugin('site.css')
         ])
     }];
 };

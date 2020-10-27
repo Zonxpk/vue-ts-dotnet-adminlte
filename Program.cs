@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace vue_dotnet_template_2
+namespace vue_dotnet_typescript
 {
     public class Program
     {
