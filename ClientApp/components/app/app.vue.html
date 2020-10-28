@@ -31,7 +31,14 @@
 
                     <section class="content">
                         <div class="container-fluid">
-                        <router-view :title.sync="title"></router-view>
+                            <div class="card card-outline card-primary">
+              
+                                <!-- /.card-header -->
+                                <div class="card-body" style="display: block;">
+                                    <router-view :title.sync="title"></router-view>
+                                </div>
+                                <!-- /.card-body -->
+                              </div>
                         </div>
                     </section>
                 </div>
